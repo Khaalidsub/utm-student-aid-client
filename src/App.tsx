@@ -4,6 +4,10 @@ import {
   Center,
   ChakraProvider,
 
+  Container,
+
+  Flex,
+
   Grid,
 
   theme,
@@ -16,10 +20,14 @@ export const App = () => (
   <ChakraProvider theme={theme}>
     <Box textAlign="center" fontSize="xl">
       <Grid minH="100vh" p={5}>
-        <Center >
+
+
+        <Box my="auto" px={64} size="xl">
           <Home />
-        </Center>
+
+        </Box>
+
       </Grid>
     </Box>
-  </ChakraProvider>
+  </ChakraProvider >
 )
